@@ -1,0 +1,13 @@
+= Dot Files
+
+These are config files to set up a system the way I like it.
+
+Most of it is based on Ryan Bates dot files, who I'm really thankful.
+You can see more information here: http://github.com/ryanb/dotfiles
+
+
+== Installation
+
+  git clone git://github.com/carlosantoniodasilva/dotfiles ~/.dotfiles
+  cd ~/.dotfiles
+  rake install

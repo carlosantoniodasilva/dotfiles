@@ -1,0 +1,131 @@
+# misc
+alias reload='. ~/.bash_profile'
+
+# cd
+alias ..='cd ..'
+
+# ls
+alias ls="ls -F"
+alias l="ls -lAh"
+alias ll="ls -l"
+alias la='ls -A'
+
+# commands - force confirming
+# alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
+alias m='mate .'
+alias grep='grep --color'
+
+# gem aliases
+alias gemi='gem install --no-ri --no-rdoc'
+alias gemu='gem uninstall'
+alias geml='gem list'
+
+# git aliases
+# TODO
+alias gst='git status'
+alias gad='git add'
+alias gau='git add -u'
+alias gcm='git commit -m'
+alias gca='git commit -am'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gmr='git merge'
+alias grb='git rebase'
+alias gbr='git branch'
+alias gbt='git branch --track'
+alias gpl='git pull'
+alias gps='git push'
+alias grs='git reset'
+alias grv='git revert'
+alias gsl='git stash list'
+alias gss='git stash save'
+alias gsp='git stash pop'
+alias gsa='git stash apply'
+alias gdf='git diff'
+alias grm='git rm -r'
+alias gmv='git mv'
+alias gcp='git cherry-pick'
+alias gcl='git clone'
+
+# rails aliases
+alias ss='script/server'
+alias ssd='script/server --debugger'
+alias sc='script/console'
+alias sd='script/dbconsole'
+alias sg='script/generate'
+alias sgm='script/generate model'
+alias sgs='script/generate scaffold'
+alias sgc='script/generate controller'
+alias sgmi='script/generate migration'
+alias sgrm='script/generate rspec_model'
+alias sgrs='script/generate rspec_scaffold'
+alias sgrc='script/generate rspec_controller'
+alias sdm='script/destroy model'
+alias sds='script/destroy scaffold'
+alias sdc='script/destroy controller'
+alias sdmi='script/destroy migration'
+alias sgdm='script/destroy rspec_model'
+alias sgds='script/destroy rspec_scaffold'
+alias sgdc='script/destroy rspec_controller'
+alias sp='script/plugin'
+alias spi='script/plugin install'
+alias sru='script/runner'
+
+# rails3 aliases
+alias rs='rails server'
+alias rsd='rails server --debugger'
+alias rc='rails console'
+alias rd='rails dbconsole'
+alias rg='rails generate'
+alias rgm='rails generate model'
+alias rgs='rails generate scaffold'
+alias rgc='rails generate controller'
+alias rgmi='rails generate migration'
+alias rdm='rails destroy model'
+alias rds='rails destroy scaffold'
+alias rdc='rails destroy controller'
+alias rdmi='rails destroy migration'
+alias rp='rails plugin'
+alias rpi='rails plugin install'
+alias rru='rails runner'
+
+alias a='autotest'
+alias af='autotest -f'
+alias as='autospec'
+alias asf='autospec -f'
+alias r='rspec -cfs'
+
+# rake
+alias seed='rake db:seed'
+alias dbc='rake db:create'
+alias dbd='rake db:drop'
+alias dbs='rake db:setup'
+alias dbtp='rake db:test:prepare'
+alias dbtc='rake db:test:clone'
+alias mig='rake db:migrate'
+alias mig:redo='rake db:migrate:redo'
+alias mig:down='rake db:migrate:down'
+alias mig:up='rake db:migrate:up'
+alias rr='rake routes'
+alias rrg='rake routes | grep'
+
+# capistrano
+alias caps='cap staging'
+alias capsd='cap staging deploy'
+alias capsm='cap staging deploy:migrate'
+alias capp='cap production'
+alias cappd='cap production deploy'
+alias cappm='cap production deploy:migrate'
+
+# rvm
+alias rvmu='rvm update'
+alias rvmi='rvm install'
+alias rvml='rvm list'
+alias rvmd='rvm default'
+alias rvm187='rvm 1.8.7'
+alias rvm191='rvm 1.9.1'
+alias rvm192='rvm 1.9.2'
+alias rvmg='rvm gemset'
+alias rvmr3='rvm gemset use rails3'

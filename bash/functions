@@ -1,0 +1,26 @@
+# changing directory to code project
+function p { cd ~/Projects/$1; }
+
+
+function colorize { export CLICOLOR=1 ; export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd ; }
+
+function uncolorize { unset CLICOLOR; unset LSCOLORS; }
+
+function find_git_branch {
+    local dir=. head
+    until [ "$dir" -ef / ]; do
+        if [ -f "$dir/.git/HEAD" ]; then
+            head=$(< "$dir/.git/HEAD")
+            if [[ $head == ref:\ refs/heads/* ]]; then
+                git_branch=" ${head#*/*/}"
+            elif [[ $head != '' ]]; then
+                git_branch=' (detached)'
+            else
+                git_branch=' (unknown)'
+            fi
+            return
+        fi
+        dir="../$dir"
+    done
+    git_branch=''
+}

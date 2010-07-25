@@ -1,0 +1,17 @@
+# ~.autotest
+require 'autotest_notification'
+SPEAKING = false
+DOOM_EDITION = false
+BUUF = false
+PENDING = false
+STICKY = false
+SUCCESS_SOUND = ''
+FAILURE_SOUND = ''
+
+require 'autotest/fsevent'
+
+Autotest.add_hook :initialize do |autotest|
+  autotest.add_mapping(/^test.*\/.*_test\.rb$/) do |filename, _|
+    filename
+  end
+end

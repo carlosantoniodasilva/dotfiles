@@ -24,11 +24,12 @@ alias geml='gem list'
 
 # git aliases
 # TODO
-alias gst='git status'
+alias gst='git status -sb'
 alias gad='git add'
 alias gau='git add -u'
 alias gcm='git commit -m'
 alias gca='git commit -am'
+alias gam='git commit --amend'
 alias gco='git checkout'
 alias gcb='git checkout -b'
 alias gmr='git merge'
@@ -48,6 +49,7 @@ alias grm='git rm -r'
 alias gmv='git mv'
 alias gcp='git cherry-pick'
 alias gcl='git clone'
+alias glg='git log --oneline --decorate'
 
 # rails aliases
 alias ss='script/server'

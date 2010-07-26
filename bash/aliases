@@ -93,6 +93,7 @@ alias rp='rails plugin'
 alias rpi='rails plugin install'
 alias rru='rails runner'
 
+# autotest/rspec
 alias a='autotest'
 alias af='autotest -f'
 alias as='autospec'
@@ -120,6 +121,15 @@ alias capsm='cap staging deploy:migrate'
 alias capp='cap production'
 alias cappd='cap production deploy'
 alias cappm='cap production deploy:migrate'
+
+#bundler
+alias b='bundle'
+alias bu='bundle update'
+alias bi='bundle install'
+alias bs='bundle show'
+alias be='bundle exec'
+alias bp='bundle package'
+alias bo='bundle open'
 
 # rvm
 alias rvmu='rvm update'

@@ -22,4 +22,5 @@ C_RESET="\[\033[00m\]"
 export PS1="$C_GREEN\w$C_RED\$(_rvm_ps1)$C_YELLOW \$(_git_ps1)$C_RESET\$ "
 
 # Set textmate as git editor
-export GIT_EDITOR="mate -w"
+export EDITOR="mate -w"
+export GIT_EDITOR=$EDITOR

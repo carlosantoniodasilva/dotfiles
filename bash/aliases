@@ -124,6 +124,7 @@ alias cappm='cap production deploy:migrate'
 
 #bundler
 alias b='bundle'
+alias bc='bundle check'
 alias bu='bundle update'
 alias bi='bundle install'
 alias bs='bundle show'

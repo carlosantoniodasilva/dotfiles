@@ -23,7 +23,7 @@ alias gemu='gem uninstall'
 alias geml='gem list'
 
 # git aliases
-# TODO
+alias gx='gitx'
 alias gst='git status -sb'
 alias gad='git add'
 alias gau='git add -u'
@@ -49,7 +49,7 @@ alias grm='git rm -r'
 alias gmv='git mv'
 alias gcp='git cherry-pick'
 alias gcl='git clone'
-alias glg='git log --oneline --decorate'
+alias glg='git log --oneline --decorate -n 10'
 
 # rails aliases
 alias ss='script/server'

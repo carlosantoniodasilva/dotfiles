@@ -50,6 +50,7 @@ alias gmv='git mv'
 alias gcp='git cherry-pick'
 alias gcl='git clone'
 alias glg='git log --oneline --decorate -n 10'
+alias gsh='git show'
 
 # rails aliases
 alias ss='script/server'

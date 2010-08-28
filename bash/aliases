@@ -24,6 +24,7 @@ alias grep='grep --color'
 alias gemi='gem install --no-ri --no-rdoc'
 alias gemu='gem uninstall'
 alias geml='gem list'
+alias gemc='gem cleanup'
 
 # git aliases
 alias gx='gitx'

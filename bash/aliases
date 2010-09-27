@@ -49,6 +49,7 @@ alias gsl='git stash list'
 alias gss='git stash save'
 alias gsp='git stash pop'
 alias gsa='git stash apply'
+alias gbl='git blame'
 alias gdf='git diff'
 alias grm='git rm -r'
 alias gmv='git mv'
@@ -99,6 +100,9 @@ alias rdmi='rails destroy migration'
 alias rp='rails plugin'
 alias rpi='rails plugin install'
 alias rru='rails runner'
+
+# passenger
+alias pas='passenger start'
 
 # autotest/rspec
 alias a='autotest'

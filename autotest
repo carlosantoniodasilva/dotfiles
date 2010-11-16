@@ -16,3 +16,25 @@ Autotest.add_hook :initialize do |autotest|
     filename
   end
 end
+
+# Avoid showing unable to map class to a file messages.
+Autotest.class_eval do
+  def consolidate_failures(failed)
+    filters = new_hash_of_arrays
+
+    class_map = Hash[*self.find_order.grep(/^test/).map { |f| # TODO: ugly
+                       [path_to_classname(f), f]
+                     }.flatten]
+    class_map.merge!(self.extra_class_map)
+
+    failed.each do |method, klass|
+      if class_map.has_key? klass then
+        filters[class_map[klass]] << method
+      # else
+      #   output.puts "Unable to map class #{klass} to a file"
+      end
+    end
+
+    return filters
+  end
+end

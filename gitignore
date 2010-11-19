@@ -4,3 +4,4 @@
 *.sw*
 .bundle/*
 .livereload
+.rvmrc

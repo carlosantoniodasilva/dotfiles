@@ -112,7 +112,8 @@ alias a='autotest'
 alias af='autotest -f'
 alias as='autospec'
 alias asf='autospec -f'
-alias r='rspec -cfs'
+alias r='rspec -bcfs'
+alias s='spec -bcfs'
 
 # rake
 alias seed='rake db:seed'

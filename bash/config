@@ -1,10 +1,3 @@
-# Show current ruby version from RVM and git branch in terminal
-# export PS1='\w `~/.rvm/bin/rvm-prompt i v` `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\[\033[37m\]$\[\033[00m\] '
-
-function _git_ps1 {
-	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-
 function _rvm_ps1 {
   ~/.rvm/bin/rvm-prompt i v g 2> /dev/null | sed -e '/^system/d' -e 's/\(.*\)/ [\1]/'
 }
@@ -18,8 +11,12 @@ C_CYAN="\[\033[0;36m\]"
 C_WHITE="\[\033[0;37m\]"
 C_RESET="\[\033[00m\]"
 
-# export PS1="$C_CYAN\$(date +%H:%M) $C_GREEN\w$C_RED\$(_rvm_ps1)$C_YELLOW \$(_git_ps1)$C_RESET\$ "
-export PS1="$C_GREEN\w$C_RED\$(_rvm_ps1)$C_YELLOW \$(_git_ps1)$C_RESET\$ "
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWUPSTREAM="auto"
+export PS1="$C_GREEN\w$C_RED\$(_rvm_ps1)$C_YELLOW \$(__git_ps1)$C_RESET\$ "
+
 
 # Set textmate as git editor
 export EDITOR="mvim -f"

@@ -152,7 +152,7 @@ alias bp='bundle package'
 alias bo='bundle open'
 
 # rvm
-alias rvmu='rvm update'
+alias rvmh='rvm get head'
 alias rvmi='rvm install'
 alias rvml='rvm list'
 alias rvmd='rvm default'

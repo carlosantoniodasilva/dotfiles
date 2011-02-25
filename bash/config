@@ -18,7 +18,7 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 export PS1="$C_GREEN\w$C_RED\$(_rvm_ps1)$C_YELLOW \$(__git_ps1)$C_RESET\$ "
 
 
-# Set textmate as git editor
+# Set macvim as default editor
 export EDITOR="mvim -f"
 export GIT_EDITOR=$EDITOR
 

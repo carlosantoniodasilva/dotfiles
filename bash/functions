@@ -1,7 +1,6 @@
 # changing directory to code project
 function p { cd ~/Projects/$1; }
 
-
 function colorize { export CLICOLOR=1 ; export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd ; }
 
 function uncolorize { unset CLICOLOR; unset LSCOLORS; }

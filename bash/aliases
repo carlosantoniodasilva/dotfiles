@@ -13,6 +13,10 @@ alias la='ls -A'
 alias e="exit"
 alias c="clear"
 
+alias pa="ps aux"
+alias pag="ps aux | grep"
+alias k9="kill -9"
+
 # commands - force confirming
 # alias rm='rm -i'
 # alias cp='cp -i'

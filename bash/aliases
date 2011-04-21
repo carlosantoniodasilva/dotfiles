@@ -23,6 +23,7 @@ alias k9="kill -9"
 # alias mv='mv -i'
 alias m='mate .'
 alias v='mvim'
+alias vim='mvim'
 alias grep='grep --color'
 
 # gem aliases
@@ -117,7 +118,7 @@ alias af='autotest -f'
 alias as='autospec'
 alias asf='autospec -f'
 alias r='rspec -bcfn'
-alias s='spec -bcfn'
+alias s='spec -cfn'
 
 # rake
 alias seed='rake db:seed'

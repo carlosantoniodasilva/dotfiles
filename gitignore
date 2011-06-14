@@ -6,3 +6,4 @@
 .livereload
 .rvmrc
 dump.rdb
+Guardfile

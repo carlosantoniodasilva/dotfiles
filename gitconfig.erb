@@ -1,13 +1,13 @@
 [user]
-	name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
-	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+  name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
+  email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
 [color]
-	ui = auto
+  ui = auto
 [core]
-	excludesfile = <%= ENV['HOME'] %>/.gitignore
-	editor = mvim -f
+  excludesfile = <%= ENV['HOME'] %>/.gitignore
+  editor = mvim -f
 [apply]
-	whitespace = nowarn
+  whitespace = nowarn
 [format]
   pretty = %C(yellow)%h%Cred%d %Creset%s
 [github]

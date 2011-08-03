@@ -115,9 +115,6 @@ alias pas='passenger start'
 
 # autotest/rspec
 alias a='autotest'
-alias af='autotest -f'
-alias as='autospec'
-alias asf='autospec -f'
 alias r='rspec -bcfn'
 alias s='spec -cfn'
 

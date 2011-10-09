@@ -11,5 +11,4 @@ if [ -f ~/.localrc ]; then
   . ~/.localrc
 fi
 
-if [[ -s /Users/${USER}/.rvm/scripts/rvm ]] ; then source /Users/${USER}/.rvm/scripts/rvm ; fi
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+eval "$(rbenv init -)"

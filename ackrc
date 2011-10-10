@@ -1,0 +1,13 @@
+# only search with case sensitivity if there is mixed case
+--smart-case
+
+# follow symlinks
+--follow
+
+# search other filetypes as ruby files
+--type-add
+ruby=haml,rabl
+
+# ignore some dirs
+--ignore-dir=.bundle
+--ignore-dir=tmp

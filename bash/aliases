@@ -23,7 +23,7 @@ alias k9="kill -9"
 # alias mv='mv -i'
 alias m='mate .'
 alias v='mvim'
-alias vim='mvim'
+# alias vim='mvim'
 alias grep='grep --color'
 
 # gem aliases

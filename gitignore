@@ -5,5 +5,7 @@
 .bundle/*
 .livereload
 .rvmrc
+.rbenv-version
 dump.rdb
 Guardfile
+vendor/bundle

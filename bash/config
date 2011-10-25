@@ -1,5 +1,10 @@
-function _rvm_ps1 {
-  ~/.rvm/bin/rvm-prompt i v g 2> /dev/null | sed -e '/^system/d' -e 's/\(.*\)/ [\1]/'
+# function _rvm_ps1 {
+#   ~/.rvm/bin/rvm-prompt i v g 2> /dev/null | sed -e '/^system/d' -e 's/\(.*\)/ [\1]/'
+# }
+
+function _ruby_ps1 {
+  ruby -e "puts RUBY_VERSION"
+  # rbenv version-name
 }
 
 C_RED="\[\033[0;31m\]"
@@ -15,7 +20,7 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM="auto"
-export PS1="$C_GREEN\w$C_RED\$(_rvm_ps1)$C_YELLOW \$(__git_ps1)$C_RESET\$ "
+export PS1="$C_GREEN\w$C_RED [\$(_ruby_ps1)]$C_YELLOW\$(__git_ps1)$C_RESET\$ "
 
 
 # Set macvim as default editor

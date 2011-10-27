@@ -8,6 +8,10 @@
 --type-add
 ruby=haml,rabl
 
+# search other filetypes as js files
+--type-add
+js=json
+
 # ignore some dirs
 --ignore-dir=.bundle
 --ignore-dir=tmp

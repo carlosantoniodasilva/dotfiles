@@ -10,5 +10,3 @@ fi
 if [ -f ~/.localrc ]; then
   . ~/.localrc
 fi
-
-eval "$(rbenv init -)"

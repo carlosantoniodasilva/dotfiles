@@ -52,6 +52,9 @@ export GIT_EDITOR=$EDITOR
 # RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 # RUBY_GC_MALLOC_LIMIT=50000000
 
+# Configure rbenv - make sure to do it before adding bundle/bin to the PATH, 
+# otherwise rbenv's path will be searched first than the current bundle/bin path.
+eval "$(rbenv init -)"
 # Put .bundle/bin as the first path to lookup executables, to work with bundler binstubs
 # Put /usr/local/bin before /usr/bin to avoid issues with lion installation (mainly git now)
 PATH=./.bundle/bin:/usr/local/bin:$PATH

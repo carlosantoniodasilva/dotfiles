@@ -6,7 +6,7 @@
 
 # search other filetypes as ruby files
 --type-add
-ruby=haml,rabl
+ruby=haml,rabl,builder
 
 # search other filetypes as js files
 --type-add

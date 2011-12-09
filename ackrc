@@ -4,13 +4,15 @@
 # follow symlinks
 --follow
 
-# search other filetypes as ruby files
+# search other filetypes
 --type-add
 ruby=haml,rabl,builder
 
-# search other filetypes as js files
 --type-add
 js=json
+
+--type-add
+css=sass,scss
 
 # ignore some dirs
 --ignore-dir=.bundle

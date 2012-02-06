@@ -2,7 +2,8 @@
 .svn
 *~
 *.sw*
-.bundle/*
+.bundle
+.idea
 .livereload
 .rvmrc
 .rbenv-version

@@ -16,3 +16,5 @@
   default = tracking
 [alias]
   rmb = !sh -c 'git branch -d $1 && git push origin :$1' -
+[branch]
+  autosetuprebase = always

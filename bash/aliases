@@ -33,6 +33,9 @@ alias geml='gem list'
 alias gemc='gem cleanup'
 
 # git aliases
+alias gitptec='git config --local user.email carlos@plataformatec.com.br && git config --local user.name "Carlos Antonio"'
+alias gitme='git config --local --unset user.email && git config --local --unset user.name'
+
 alias gx='gitx'
 alias gst='git status -sb'
 alias gad='git add'

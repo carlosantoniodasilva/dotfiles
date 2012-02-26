@@ -61,3 +61,6 @@ eval "$(rbenv init -)"
 # Put .bundle/bin as the first path to lookup executables, to work with bundler binstubs
 # Put /usr/local/bin before /usr/bin to avoid issues with lion installation (mainly git now)
 PATH=./.bundle/bin:/usr/local/bin:$PATH
+
+# Bash 4.0 globstar config (**)
+shopt -s globstar

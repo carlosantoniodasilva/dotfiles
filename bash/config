@@ -22,6 +22,9 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM="auto"
 export PS1="$C_GREEN\w$C_RED [\$(_ruby_ps1)]$C_YELLOW\$(__git_ps1)$C_RESET\n\$ "
 
+# Colors for `ls`
+export CLICOLOR=1
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # Set macvim as default editor
 export EDITOR="mvim -f"

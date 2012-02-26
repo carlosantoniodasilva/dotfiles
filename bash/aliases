@@ -5,10 +5,8 @@ alias reload='. ~/.bash_profile'
 alias ..='cd ..'
 
 # ls
-alias ls="ls -F"
+alias ls="ls -FG"
 alias l="ls -lAh"
-alias ll="ls -l"
-alias la='ls -A'
 
 alias e="exit"
 alias c="clear"

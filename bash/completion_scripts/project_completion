@@ -12,7 +12,7 @@ class ProjectCompletion
   end
 
   def typed
-    @command[/\s(.+?)$/, 1] || ''
+    @typed ||= @command[/\s(.+?)$/, 1] || ''
   end
 
   def projects

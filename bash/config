@@ -26,6 +26,11 @@ export PS1="$C_GREEN\w$C_RED [\$(_ruby_ps1)]$C_YELLOW\$(__git_ps1)$C_RESET\n\$ "
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
+# History list size (also changes HISTFILESIZE).
+export HISTSIZE=1000
+# erasedups: remove older dups and saves the new entry on the history list
+export HISTCONTROL="erasedups"
+
 # Set macvim as default editor
 export EDITOR="mvim -f"
 export GIT_EDITOR=$EDITOR

@@ -2,6 +2,10 @@
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 
+# Don't echo ^C etc (new in bash 4.1).
+# Note this only works for the command line itself, not if already running a command.
+set echo-control-characters off
+
 # Ignore case on tab completion (readline variable).
 # (You can have a directory called "Documents" and tab-complete with "doc<tab>".
 set completion-ignore-case On

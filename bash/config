@@ -55,7 +55,7 @@ export GIT_EDITOR=$EDITOR
 # RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 # RUBY_GC_MALLOC_LIMIT=50000000
 
-# Configure rbenv - make sure to do it before adding bundle/bin to the PATH, 
+# Configure rbenv - make sure to do it before adding bundle/bin to the PATH,
 # otherwise rbenv's path will be searched first than the current bundle/bin path.
 eval "$(rbenv init -)"
 # Put .bundle/bin as the first path to lookup executables, to work with bundler binstubs
@@ -64,3 +64,9 @@ PATH=./.bundle/bin:/usr/local/bin:$PATH
 
 # Bash 4.0 globstar config (**)
 shopt -s globstar
+
+# Disable output control for terminal device interface. This allows use of bash
+# history forward search with Ctrl-s shortcut. More info:
+# http://askubuntu.com/questions/60071/how-to-forward-search-history-with-the-reverse-i-search-command-ctrlr
+# http://www.wlug.org.nz/CommonErrors
+stty -ixon

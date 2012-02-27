@@ -1,3 +1,7 @@
-# Map up/down keys for bash history search
+# Map up/down keys for bash history search.
 "\e[A": history-search-backward
 "\e[B": history-search-forward
+
+# Ignore case on tab completion (readline variable).
+# (You can have a directory called "Documents" and tab-complete with "doc<tab>".
+set completion-ignore-case On

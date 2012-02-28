@@ -67,6 +67,9 @@ eval "$(rbenv init -)"
 # Put /usr/local/bin before /usr/bin to avoid issues with lion installation (mainly git now)
 PATH=./.bundle/bin:/usr/local/bin:$PATH
 
+# Setup search path for `cd` command to search in home and projects folders.
+CDPATH=".:~:~/Projects"
+
 # Bash 4.0 globstar config (**)
 shopt -s globstar
 

@@ -27,7 +27,7 @@ export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # History list size (also changes HISTFILESIZE).
-HISTSIZE=1000
+HISTSIZE=2000
 # erasedups: remove older dups and saves the new entry on the history list
 HISTCONTROL="erasedups"
 

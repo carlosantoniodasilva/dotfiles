@@ -9,7 +9,7 @@
 ruby=haml,rabl,builder
 
 --type-add
-js=json
+js=json,tmpl,jst
 
 --type-add
 css=sass,scss

@@ -30,6 +30,8 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 HISTSIZE=2000
 # erasedups: remove older dups and saves the new entry on the history list
 HISTCONTROL="erasedups"
+# ignore some commands for history
+HISTIGNORE="ls:clear:c:exit:e:purge"
 
 # Set macvim as default editor
 export EDITOR="mvim -f"

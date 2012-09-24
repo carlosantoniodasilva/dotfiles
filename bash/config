@@ -72,9 +72,6 @@ PATH=./.bundle/bin:/usr/local/bin:$PATH
 # Setup search path for `cd` command to search in home and projects folders.
 CDPATH=".:~:~/Projects"
 
-# Bash 4.0 globstar config (**)
-shopt -s globstar
-
 # Disable output control for terminal device interface. This allows use of bash
 # history forward search with Ctrl-s shortcut. More info:
 # http://askubuntu.com/questions/60071/how-to-forward-search-history-with-the-reverse-i-search-command-ctrlr

@@ -34,7 +34,10 @@ HISTCONTROL="erasedups"
 HISTIGNORE="ls:clear:c:exit:e:purge"
 
 # Set macvim as default editor
-export EDITOR="mvim -f"
+# export EDITOR="mvim -f"
+# Set vim as default editor
+export EDITOR="vim"
+# Use the same default editor for git
 export GIT_EDITOR=$EDITOR
 
 # REE configs. Specially added to make tests run faster.

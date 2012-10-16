@@ -16,5 +16,6 @@
   default = tracking
 [alias]
   rmb = !sh -c 'git branch -d $1 && git push origin :$1' -
+  commit-count = shortlog -s -n
 [branch]
   autosetuprebase = always

@@ -15,6 +15,35 @@
 [push]
   default = tracking
 [alias]
+  ad = add
+  am = commit --amend
+  au = add -u
+  bl = blame
+  br = branch
+  cb = checkout -b
+  cm = commit
+  co = checkout
+  cp = cherry-pick
+  dc = diff --cached
+  df = diff
+  ft = fetch
+  lg = log
+  mr = merge
+  pl = pull
+  ps = push
+  rb = rebase
+  rm = rm -r
+  rs = reset
+  rv = revert
+  sa = stash apply
+  sh = show
+  sl = stash list
+  sm = submodule
+  sp = stash pop
+  ss = stash save
+  st = status
+  sw = stash show
+
   rmb = !sh -c 'git branch -d $1 && git push origin :$1' -
   commit-count = shortlog -s -n
 [branch]

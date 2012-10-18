@@ -1,10 +1,9 @@
-source ~/.bash/completion_scripts/git_completion
-# Make g alias for git work with autocomplete.
-complete -o default -o nospace -F _git g
-
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+# Make g alias for git work with autocomplete.
+complete -o default -o nospace -F _git g

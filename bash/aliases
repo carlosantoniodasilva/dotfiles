@@ -118,7 +118,7 @@ alias pas='passenger start'
 
 # autotest/rspec
 alias a='autotest'
-alias r='rspec -bcfn'
+alias r='rspec -cfn'
 alias s='spec -cfn'
 
 # rake

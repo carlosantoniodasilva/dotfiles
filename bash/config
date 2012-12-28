@@ -65,6 +65,17 @@ export GIT_EDITOR=$EDITOR
 # RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 # RUBY_GC_MALLOC_LIMIT=50000000
 
+# Ruby 1.9.3-p327 with falcon patch:
+#   rbenv: https://gist.github.com/1688857  rvm: https://gist.github.com/4136373
+# Recommended configs
+# export RUBY_HEAP_MIN_SLOTS=1000000
+# export RUBY_HEAP_SLOTS_INCREMENT=1000000
+# export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+# export RUBY_GC_MALLOC_LIMIT=100000000
+# export RUBY_HEAP_FREE_MIN=500000
+export RUBY_GC_MALLOC_LIMIT=60000000
+export RUBY_FREE_MIN=200000
+
 # Configure rbenv - make sure to do it before adding bundle/bin to the PATH,
 # otherwise rbenv's path will be searched first than the current bundle/bin path.
 eval "$(rbenv init -)"

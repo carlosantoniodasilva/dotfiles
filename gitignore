@@ -7,5 +7,6 @@
 .livereload
 .rvmrc
 .rbenv-version
+.ruby-version
 dump.rdb
 Guardfile

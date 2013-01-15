@@ -120,7 +120,7 @@ alias pas='passenger start'
 alias a='autotest'
 alias r='rspec -cfn'
 alias s='spec -cfn'
-alias t='ruby -w -Itest'
+alias t='ruby -Itest'
 
 # rake
 alias seed='rake db:seed'

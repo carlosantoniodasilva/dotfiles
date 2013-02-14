@@ -76,6 +76,10 @@ export GIT_EDITOR=$EDITOR
 export RUBY_GC_MALLOC_LIMIT=60000000
 export RUBY_FREE_MIN=200000
 
+# Add firebird home to $PATH so that we can use the command-line programs.
+FIREBIRD_HOME=/Library/Frameworks/Firebird.framework/Resources
+PATH=$PATH:$FIREBIRD_HOME/bin
+
 # Configure rbenv - make sure to do it before adding bundle/bin to the PATH,
 # otherwise rbenv's path will be searched first than the current bundle/bin path.
 eval "$(rbenv init -)"

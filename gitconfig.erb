@@ -12,14 +12,12 @@
   ; pretty = %C(yellow)%h%Cred%d %Creset%s
 [github]
   user = <%= print("Your github user: "); STDOUT.flush; STDIN.gets.chomp %>
-[push]
-  default = tracking
 [alias]
   ad = add
-  am = commit --amend
   au = add -u
   bl = blame
   br = branch
+  ca = commit --amend
   cb = checkout -b
   cl = clone
   cm = commit
@@ -49,3 +47,7 @@
   commit-count = shortlog -s -n
 [branch]
   autosetuprebase = always
+[pull]
+  rebase = true
+[push]
+  default = tracking

@@ -18,3 +18,4 @@ css=sass,scss
 --ignore-dir=.bundle
 --ignore-dir=vendor/bundle
 --ignore-dir=tmp
+--ignore-dir=log

@@ -81,6 +81,9 @@ export RUBY_FREE_MIN=600000
 FIREBIRD_HOME=/Library/Frameworks/Firebird.framework/Resources
 PATH=$PATH:$FIREBIRD_HOME/bin
 
+# Add heroku toolbelt.
+PATH=/usr/local/heroku/bin:$PATH
+
 # Configure rbenv - make sure to do it before adding bundle/bin to the PATH,
 # otherwise rbenv's path will be searched first than the current bundle/bin path.
 eval "$(rbenv init -)"

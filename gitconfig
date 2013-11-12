@@ -45,7 +45,7 @@
 [pull]
   rebase = true
 [push]
-  default = upstream
+  default = simple
 [merge]
   ff = false
 [github]
@@ -53,3 +53,7 @@
 [user]
   name = Carlos Antonio da Silva
   email = carlosantoniodasilva@gmail.com
+[hub]
+  protocol = https
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential

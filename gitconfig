@@ -1,17 +1,12 @@
-[user]
-  name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
-  email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
 [color]
   ui = auto
 [core]
-  excludesfile = <%= ENV['HOME'] %>/.gitignore
+  excludesfile = /Users/carlos/.gitignore
   editor = mvim -f
 [apply]
   whitespace = nowarn
 [format]
   ; pretty = %C(yellow)%h%Cred%d %Creset%s
-[github]
-  user = <%= print("Your github user: "); STDOUT.flush; STDIN.gets.chomp %>
 [alias]
   ad = add
   au = add -u
@@ -53,3 +48,8 @@
   default = upstream
 [merge]
   ff = false
+[github]
+  user = carlosantoniodasilva
+[user]
+  name = Carlos Antonio da Silva
+  email = carlosantoniodasilva@gmail.com

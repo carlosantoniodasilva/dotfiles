@@ -87,7 +87,7 @@ export RUBY_FREE_MIN=600000
 # PATH=./.bundle/bin:/usr/local/bin:$PATH
 
 # Setup search path for `cd` command to search in home and projects folders.
-CDPATH=".:~:~/Projects"
+CDPATH=".:~:~/src"
 
 # Disable output control for terminal device interface. This allows use of bash
 # history forward search with Ctrl-s shortcut. More info:

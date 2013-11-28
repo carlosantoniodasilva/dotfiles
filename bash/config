@@ -85,6 +85,7 @@ export RUBY_FREE_MIN=600000
 # Put .bundle/bin as the first path to lookup executables, to work with bundler binstubs
 # Put /usr/local/bin before /usr/bin to avoid issues with lion installation (mainly git now)
 # PATH=./.bundle/bin:/usr/local/bin:$PATH
+PATH=./.bundle/bin:$PATH
 
 # Setup search path for `cd` command to search in home and projects folders.
 CDPATH=".:~:~/src"

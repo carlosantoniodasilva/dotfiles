@@ -15,7 +15,7 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM="auto"
-PS1="$C_GREEN\w$C_RED [\$(_ruby_ps1)]$C_YELLOW\$(unalias git; __git_ps1)$C_RESET\n\$ "
+PS1="$C_GREEN\w$C_RED [\$(_ruby_ps1)]$C_YELLOW\$(__git_ps1)$C_RESET\n\$ "
 
 # Colors for `ls`
 export CLICOLOR=1

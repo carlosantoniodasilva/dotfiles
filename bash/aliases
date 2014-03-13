@@ -174,17 +174,3 @@ alias rbs21='rbenv shell 2.1.1'
 alias rbv='rbenv version'
 alias rbvs='rbenv versions'
 alias rbr='rbenv rehash'
-
-# rvm
-# alias rvmh='rvm get head'
-# alias rvmi='rvm install'
-# alias rvml='rvm list'
-# alias rvmd='rvm default'
-# alias rvm187='rvm 1.8.7'
-# alias rvm191='rvm 1.9.1'
-# alias rvm192='rvm 1.9.2'
-# alias rvmg='rvm gemset'
-# alias rvmr3='rvm gemset use rails3'
-# alias rvmr3m='rvm gemset use rails3master'
-# alias rvmrm='rvm gemset use railsmaster'
-

@@ -72,6 +72,10 @@ export RUBY_FREE_MIN=600000
 # export RUBY_GC_MALLOC_LIMIT=60000000
 # export RUBY_FREE_MIN=200000
 
+# Ruby 2.1 configs
+export RUBY_GC_HEAP_FREE_SLOTS=$RUBY_FREE_MIN
+export RUBY_GC_HEAP_INIT_SLOTS=$RUBY_HEAP_MIN_SLOTS
+
 # Add firebird home to $PATH so that we can use the command-line programs.
 # FIREBIRD_HOME=/Library/Frameworks/Firebird.framework/Resources
 # PATH=$PATH:$FIREBIRD_HOME/bin

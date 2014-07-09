@@ -1,7 +1,7 @@
 [color]
   ui = auto
 [core]
-  excludesfile = /Users/carlos/.gitignore
+  excludesfile = ~/.gitignore
   editor = mvim -f
 [apply]
   whitespace = nowarn
@@ -37,6 +37,7 @@
   ss = stash save
   st = status
   sw = stash show
+  psf = push -f
 
   commit-count = shortlog -s -n
   current-branch = symbolic-ref --short head

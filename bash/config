@@ -85,11 +85,11 @@ export RUBY_GC_HEAP_INIT_SLOTS=$RUBY_HEAP_MIN_SLOTS
 
 # Configure rbenv - make sure to do it before adding bundle/bin to the PATH,
 # otherwise rbenv's path will be searched first than the current bundle/bin path.
-# eval "$(rbenv init -)"
+eval "$(rbenv init -)"
+
 # Put .bundle/bin as the first path to lookup executables, to work with bundler binstubs
 # Put /usr/local/bin before /usr/bin to avoid issues with lion installation (mainly git now)
-# PATH=./.bundle/bin:/usr/local/bin:$PATH
-PATH=./.bundle/bin:$PATH
+PATH=./bin:./.bundle/bin:/usr/local/bin:$PATH
 
 # Setup search path for `cd` command to search in home and projects folders.
 CDPATH=".:~:~/src"

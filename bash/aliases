@@ -15,6 +15,8 @@ alias pa="ps aux"
 alias pag="ps aux | grep"
 alias k9="kill -9"
 
+alias killcamera="sudo killall VDCAssistant"
+
 # commands - force confirming
 # alias rm='rm -i'
 # alias cp='cp -i'

@@ -118,7 +118,7 @@ alias pas='passenger start'
 
 # autotest/rspec
 alias a='autotest'
-alias r='rspec -cfn'
+alias r='rspec -cfd'
 alias s='spec -cfn'
 alias t='ruby -Itest'
 

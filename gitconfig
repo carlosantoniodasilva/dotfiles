@@ -43,7 +43,7 @@
   current-branch = symbolic-ref --short head
   merge-commit = !sh -c 'git rev-list $1..master --ancestry-path --merges | tail -n 1' -
   psu = !sh -c 'git push -u origin $(git current-branch)' -
-  rmb = !sh -c 'git branch -d $1 && git push origin :$1' -
+  rmbranch = !sh -c 'git branch -d $1 && git push origin :$1' -
 [branch]
   autosetuprebase = always
 [pull]

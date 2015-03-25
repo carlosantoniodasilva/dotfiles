@@ -8,6 +8,7 @@
 .rvmrc
 .rbenv-version
 .ruby-version
+.tags
 dump.rdb
 Guardfile
 tags

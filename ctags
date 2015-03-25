@@ -1,0 +1,7 @@
+--recurse=yes
+--tag-relative=yes
+--exclude=.bundle
+--exclude=.git
+--exclude=log
+--exclude=tmp
+-f .tags

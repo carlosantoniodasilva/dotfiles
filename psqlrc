@@ -1,0 +1,20 @@
+-- Display how long commands take
+\timing on
+
+-- Expanded output (on|off|auto)
+-- \x auto
+
+-- Display nulls
+\pset null '[NULL]'
+
+-- Configure history file per db and ignore commands starting with a space
+\set HISTCONTROL ignorespace
+\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTSIZE 2000
+
+-- Prompt shows "user@[host] db #", line break shows ">>>"
+\set PROMPT1 '%[%033[31;5m%]%x%[%033[0m%]%[%033[31;1m%]%n%[%033[33;1m%]@%[%033[32;1m%m%[%033[0m%] %[%033[34;1m%]%/%[%033[0m%] # '
+\set PROMPT2 '%033[33;1m >>> %033[0m%'
+
+-- Don't exit with ctrl-d unless you press it twice
+\set IGNOREEOF 2

@@ -20,6 +20,7 @@ css=sass,scss
 --ignore-dir=tmp
 --ignore-dir=log
 --ignore-dir=.tmp
+--ignore-dir=coverage
 
 # ignore some files
 --ignore-file=is:tags

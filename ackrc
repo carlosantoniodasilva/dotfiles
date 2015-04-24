@@ -21,6 +21,7 @@ css=sass,scss
 --ignore-dir=log
 --ignore-dir=.tmp
 --ignore-dir=coverage
+--ignore-dir=dist
 
 # ignore some files
 --ignore-file=is:tags

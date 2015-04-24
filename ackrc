@@ -17,6 +17,7 @@ css=sass,scss
 # ignore some dirs
 --ignore-dir=.bundle
 --ignore-dir=vendor/bundle
+--ignore-dir=vendor/gems
 --ignore-dir=tmp
 --ignore-dir=log
 --ignore-dir=.tmp

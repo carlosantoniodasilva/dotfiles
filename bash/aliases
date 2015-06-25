@@ -22,7 +22,7 @@ alias killcamera="sudo killall VDCAssistant"
 # alias cp='cp -i'
 # alias mv='mv -i'
 # alias m='mate .'
-alias v='mvim'
+alias v='vim'
 # alias vim='mvim'
 alias grep='grep --color'
 

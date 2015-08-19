@@ -27,3 +27,4 @@ css=sass,scss
 # ignore some files
 --ignore-file=is:tags
 --ignore-file=is:.tags
+--ignore-file=is:.example_statuses

@@ -5,4 +5,5 @@
 --exclude=log
 --exclude=tmp
 --exclude=dist
+--exclude=out
 -f .tags

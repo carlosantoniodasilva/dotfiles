@@ -23,6 +23,7 @@ css=sass,scss
 --ignore-dir=.tmp
 --ignore-dir=coverage
 --ignore-dir=dist
+--ignore-dir=out
 
 # ignore some files
 --ignore-file=is:tags

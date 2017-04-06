@@ -175,3 +175,6 @@ alias rbs24='rbenv shell 2.4.1'
 alias rbv='rbenv version'
 alias rbvs='rbenv versions'
 alias rbr='rbenv rehash'
+
+# postgresql
+alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'"

@@ -7,8 +7,9 @@
 -- Display nulls
 \pset null '[NULL]'
 
--- Configure history file per db and ignore commands starting with a space
-\set HISTCONTROL ignorespace
+-- Configure history file per db and ignore commands starting with a space and duplicates
+-- HISTCONTROL: ignorespace, ignoredups, ignoreboth
+\set HISTCONTROL ignoreboth
 \set HISTFILE ~/.psql_history- :DBNAME
 \set HISTSIZE 2000
 

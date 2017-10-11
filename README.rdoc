@@ -8,6 +8,6 @@ You can see more information here: http://github.com/ryanb/dotfiles
 
 == Installation
 
-  git clone git://github.com/carlosantoniodasilva/dotfiles ~/.dotfiles
+  git clone https://github.com/carlosantoniodasilva/dotfiles.git ~/.dotfiles
   cd ~/.dotfiles
   rake install

@@ -37,7 +37,7 @@
   ss = stash save
   st = status
   sw = stash show
-  psf = push -f
+  psf = push --force-with-lease
 
   commit-count = shortlog -s -n
   current-branch = symbolic-ref --short head

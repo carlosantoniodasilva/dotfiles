@@ -1,6 +1,7 @@
 [color]
   ui = auto
 [core]
+  attributesFile = ~/.gitattributes
   excludesfile = ~/.gitignore
   editor = mvim -f
 [apply]

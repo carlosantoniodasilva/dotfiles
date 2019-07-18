@@ -35,6 +35,9 @@ export EDITOR="vim"
 # Use the same default editor for git
 export GIT_EDITOR=$EDITOR
 
+# Set up the config path for `bat`: https://github.com/sharkdp/bat.
+export BAT_CONFIG_PATH="$HOME/.batconfig"
+
 # REE configs. Specially added to make tests run faster.
 # http://smartic.us/2010/10/27/tune-your-ruby-enterprise-edition-garbage-collection-settings-to-run-tests-faster/
 # export RUBY_HEAP_MIN_SLOTS=1000000

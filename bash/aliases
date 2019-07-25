@@ -27,7 +27,7 @@ alias v='vim'
 alias grep='grep --color'
 
 # gem aliases
-alias gemi='gem install --no-ri --no-rdoc'
+alias gemi='gem install'
 alias gemu='gem uninstall'
 alias geml='gem list'
 alias gemc='gem cleanup'

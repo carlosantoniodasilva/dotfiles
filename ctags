@@ -1,9 +1,12 @@
 --recurse=yes
 --tag-relative=yes
 --exclude=.bundle
+--exclude=vendor/bundle
 --exclude=.git
 --exclude=log
 --exclude=tmp
 --exclude=dist
 --exclude=out
+--exclude=node_modules
+--exclude=swagger-ui
 -f .tags

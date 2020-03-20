@@ -1,6 +1,6 @@
 ---
 BUNDLE_BIN: ".bundle/bin"
 BUNDLE_JOBS: "4"
-BUNDLE_BUILD__MYSQL2: "--with-opt-dir=/usr/local/opt/openssl"
+BUNDLE_BUILD__MYSQL2: "--with-opt-dir=/usr/local/opt/openssl@1.1"
 BUNDLE_BUILD__LIBXML-RUBY: "--with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2/"
 BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2/"

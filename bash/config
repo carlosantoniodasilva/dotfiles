@@ -1,5 +1,6 @@
 function _ruby_ps1 {
-  rbenv version-name
+  # rbenv version-name
+  ruby --version | sed -n "s/^ruby \(.*\)p.*/\1/p"
 }
 
 C_RED="\[\033[0;31m\]"
@@ -88,7 +89,13 @@ export RUBY_GC_HEAP_INIT_SLOTS=$RUBY_HEAP_MIN_SLOTS
 
 # Configure rbenv - make sure to do it before adding bundle/bin to the PATH,
 # otherwise rbenv's path will be searched first than the current bundle/bin path.
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
+
+# Configure chruby, set it to automatically load the current .ruby-version file.
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+# Use the already installed Ruby versions under rbenv folder.
+RUBIES+=(~/.rbenv/versions/*)
 
 # Put .bundle/bin as the first path to lookup executables, to work with bundler binstubs
 # Put /usr/local/bin before /usr/bin to avoid issues with lion installation (mainly git now)

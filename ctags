@@ -2,6 +2,7 @@
 --tag-relative=yes
 --exclude=.bundle
 --exclude=vendor/bundle
+--exclude=bundle/cache
 --exclude=.git
 --exclude=log
 --exclude=tmp

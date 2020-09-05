@@ -2,6 +2,7 @@
 .svn
 *~
 *.swp
+.byebug_history
 .bundle
 .idea
 .livereload

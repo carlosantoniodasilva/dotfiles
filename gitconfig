@@ -3,7 +3,7 @@
 [core]
   attributesFile = ~/.gitattributes
   excludesfile = ~/.gitignore
-  editor = mvim -f
+  editor = vim -f
 [apply]
   whitespace = nowarn
 [format]

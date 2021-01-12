@@ -41,8 +41,8 @@ setopt HIST_FIND_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 
 # enable correction suggestions.
-setopt CORRECT
-setopt CORRECT_ALL
+# setopt CORRECT
+# setopt CORRECT_ALL
 
 # turn more advanced autocompletion on.
 if type brew &>/dev/null; then

@@ -34,3 +34,8 @@ gifify() {
     echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
   fi
 }
+
+# ruby version for terminal prompt
+function __ruby_prompt {
+  ruby --version | sed -n "s/^ruby \(.*\)p.*/\1/p"
+}

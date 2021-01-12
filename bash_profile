@@ -14,11 +14,6 @@ export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 # Make g alias for git work with autocomplete.
 complete -o default -o nospace -F _git g
 
-function _ruby_ps1 {
-  # rbenv version-name
-  ruby --version | sed -n "s/^ruby \(.*\)p.*/\1/p"
-}
-
 C_RED="\[\033[0;31m\]"
 C_GREEN="\[\033[0;32m\]"
 C_YELLOW="\[\033[01;33m\]"
@@ -28,11 +23,7 @@ C_CYAN="\[\033[0;36m\]"
 C_WHITE="\[\033[0;37m\]"
 C_RESET="\[\033[00m\]"
 
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_SHOWSTASHSTATE=true
-export GIT_PS1_SHOWUNTRACKEDFILES=true
-export GIT_PS1_SHOWUPSTREAM="auto"
-PS1="$C_GREEN\w$C_RED [\$(_ruby_ps1)]$C_YELLOW\$(__git_ps1)$C_RESET\n\$ "
+PS1="$C_GREEN\w$C_RED [\$(__ruby_prompt)]$C_YELLOW\$(__git_ps1)$C_RESET\n\$ "
 
 # Colors for `ls`
 export CLICOLOR=1

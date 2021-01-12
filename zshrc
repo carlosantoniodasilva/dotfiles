@@ -44,15 +44,6 @@ setopt HIST_REDUCE_BLANKS
 setopt CORRECT
 setopt CORRECT_ALL
 
-# prompt:
-#   - show current folder with home as ~/
-#   - prompt % for normal user, # for sudo
-# todo: ruby/git
-PROMPT='%F{green}%~%f %# '
-
-# right prompt
-# RPROMPT=''
-
 # turn more advanced autocompletion on.
 if type brew &>/dev/null; then
   # include brew autocompletion scripts.
@@ -68,6 +59,17 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# prompt:
+#   - show current folder with home as ~/
+#   - show [ruby version]
+#   - show (git version)
+#   - prompt % for normal user, # for sudo
+setopt prompt_subst
+PROMPT='%F{green}%~%f %F{red}[$(echo $(__ruby_prompt))]%f %F{yellow}$(echo $(__git_ps1))%f'$'\n''%# '
+
+# right prompt
+# RPROMPT=''
 
 # Map up/down keys for bash history search.
 bindkey '^[[A' up-line-or-search # up arrow bindkey

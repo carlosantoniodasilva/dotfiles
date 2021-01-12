@@ -10,6 +10,15 @@ if [ -f ~/.localrc ]; then
   . ~/.localrc
 fi
 
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+  . /usr/local/etc/bash_completion.d/git-prompt.sh
+
+  export GIT_PS1_SHOWDIRTYSTATE=true
+  export GIT_PS1_SHOWSTASHSTATE=true
+  export GIT_PS1_SHOWUNTRACKEDFILES=true
+  export GIT_PS1_SHOWUPSTREAM="auto"
+fi
+
 # Configure chruby, set it to automatically load the current .ruby-version file.
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh

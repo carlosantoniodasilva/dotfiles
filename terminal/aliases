@@ -1,9 +1,3 @@
-# misc
-alias reload='. ~/.bash_profile'
-
-# cd
-alias ..='cd ..'
-
 # ls
 alias ls="ls -FG"
 alias l="ls -lAh"
@@ -70,31 +64,6 @@ alias gsh='git show'
 alias gsm='git submodule'
 
 # rails aliases
-alias ss='script/server'
-alias ssd='script/server --debugger'
-alias sc='script/console'
-alias sdb='script/dbconsole'
-alias sg='script/generate'
-alias sgm='script/generate model'
-alias sgs='script/generate scaffold'
-alias sgc='script/generate controller'
-alias sgmi='script/generate migration'
-alias sgrm='script/generate rspec_model'
-alias sgrs='script/generate rspec_scaffold'
-alias sgrc='script/generate rspec_controller'
-alias sd='script/destroy'
-alias sdm='script/destroy model'
-alias sds='script/destroy scaffold'
-alias sdc='script/destroy controller'
-alias sdmi='script/destroy migration'
-alias sgdm='script/destroy rspec_model'
-alias sgds='script/destroy rspec_scaffold'
-alias sgdc='script/destroy rspec_controller'
-alias sp='script/plugin'
-alias spi='script/plugin install'
-alias sru='script/runner'
-
-# rails3 aliases
 alias rs='rails server'
 alias rsd='rails server --debugger'
 alias rc='rails console'
@@ -113,15 +82,6 @@ alias rp='rails plugin'
 alias rpi='rails plugin install'
 alias rru='rails runner'
 
-# passenger
-alias pas='passenger start'
-
-# autotest/rspec
-alias a='autotest'
-alias r='rspec -cfd'
-alias s='spec -cfn'
-alias t='ruby -Itest'
-
 # rake
 alias seed='rake db:seed'
 alias dbc='rake db:create'
@@ -139,14 +99,6 @@ alias mig:reset='rake db:migrate:reset'
 alias rr='rake routes'
 alias rrg='rake routes | grep'
 
-# capistrano
-alias caps='cap staging'
-alias capsd='cap staging deploy'
-alias capsm='cap staging deploy:migrate'
-alias capp='cap production'
-alias cappd='cap production deploy'
-alias cappm='cap production deploy:migrate'
-
 # bundler
 alias b='bundle'
 alias bc='bundle check'
@@ -158,25 +110,11 @@ alias bp='bundle package'
 alias bo='bundle open'
 alias bl='bundle list'
 
-# rbenv
-alias rb='rbenv'
-alias rbi='rbenv install'
-alias rbg='rbenv global'
-alias rbl='rbenv local'
-alias rbl21='rbenv local 2.1.10'
-alias rbl22='rbenv local 2.2.10'
-alias rbl23='rbenv local 2.3.7'
-alias rbl24='rbenv local 2.4.4'
-alias rbl25='rbenv local 2.5.1'
-alias rbs='rbenv shell'
-alias rbs21='rbenv shell 2.1.10'
-alias rbs22='rbenv shell 2.2.10'
-alias rbs23='rbenv shell 2.3.7'
-alias rbs24='rbenv shell 2.4.4'
-alias rbs25='rbenv shell 2.5.1'
-alias rbv='rbenv version'
-alias rbvs='rbenv versions'
-alias rbr='rbenv rehash'
+# autotest/rspec
+alias a='autotest'
+alias r='rspec -cfd'
+alias s='spec -cfn'
+alias t='ruby -Itest'
 
 # postgresql
 alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'"

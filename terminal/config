@@ -1,0 +1,21 @@
+# Set macvim as default editor
+# export EDITOR="mvim -f"
+# Set vim as default editor
+export EDITOR="vim"
+# Use the same default editor for git
+export GIT_EDITOR=$EDITOR
+
+# load a custom `.localrc` if it exists.
+if [ -f ~/.localrc ]; then
+  . ~/.localrc
+fi
+
+# Configure chruby, set it to automatically load the current .ruby-version file.
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+# Disable output control for terminal device interface. This allows use of bash
+# history forward search with Ctrl-s shortcut. More info:
+# http://askubuntu.com/questions/60071/how-to-forward-search-history-with-the-reverse-i-search-command-ctrlr
+# http://www.wlug.org.nz/CommonErrors
+stty -ixon

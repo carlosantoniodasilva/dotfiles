@@ -6,6 +6,8 @@ IRB.conf[:AUTO_INDENT]  = true
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
+# Access our previous X evaluations in an IRB console using double underscore `__`
+IRB.conf[:EVAL_HISTORY] = 3
 
 class Object
   # list methods which aren't in superclass

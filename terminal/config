@@ -23,6 +23,11 @@ fi
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
+# Configure asdf
+if [ -f $(brew --prefix asdf)/libexec/asdf.sh ]; then
+  . $(brew --prefix asdf)/libexec/asdf.sh
+fi
+
 # Disable output control for terminal device interface. This allows use of bash
 # history forward search with Ctrl-s shortcut. More info:
 # http://askubuntu.com/questions/60071/how-to-forward-search-history-with-the-reverse-i-search-command-ctrlr

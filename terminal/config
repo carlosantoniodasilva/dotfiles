@@ -20,8 +20,8 @@ if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
 fi
 
 # Configure chruby, set it to automatically load the current .ruby-version file.
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+# source /usr/local/share/chruby/chruby.sh
+# source /usr/local/share/chruby/auto.sh
 
 # Configure asdf
 if [ -f $(brew --prefix asdf)/libexec/asdf.sh ]; then

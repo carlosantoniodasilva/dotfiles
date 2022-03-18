@@ -48,7 +48,7 @@ end
 
 # Add color coding based on Rails environment for safety
 # https://gist.github.com/swanson/3ca98caff43d52f62b4b99f6f2c7444c
-if defined? Rails
+if defined?(Rails) && defined?(Rails.env)
   banner = if Rails.env.production?
     "\e[41;97;1m #{Rails.env} \e[0m "
   else

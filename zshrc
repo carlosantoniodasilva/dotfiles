@@ -1,5 +1,8 @@
 # A lot of the configs here are based on https://scriptingosx.com/2019/06/moving-to-zsh/
 
+# Setup homebrew first.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # import shared aliases/functions
 source ~/.terminal/aliases
 source ~/.terminal/config

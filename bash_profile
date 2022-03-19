@@ -8,8 +8,8 @@ alias reload='. ~/.bash_profile'
 alias ..='cd ..'
 
 # setup completions
-export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+export BASH_COMPLETION_COMPAT_DIR="$HOMEBREW_PREFIX/etc/bash_completion.d"
+[[ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]] && . "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
 
 # Make g alias for git work with autocomplete.
 complete -o default -o nospace -F _git g
@@ -85,7 +85,7 @@ export RUBY_GC_HEAP_INIT_SLOTS=$RUBY_HEAP_MIN_SLOTS
 # PATH=$PATH:$FIREBIRD_HOME/bin
 
 # Add heroku toolbelt.
-# PATH=/usr/local/heroku/bin:$PATH
+# PATH=$HOMEBREW_PREFIX/heroku/bin:$PATH
 
 # Configure rbenv - make sure to do it before adding bundle/bin to the PATH,
 # otherwise rbenv's path will be searched first than the current bundle/bin path.
@@ -95,8 +95,8 @@ export RUBY_GC_HEAP_INIT_SLOTS=$RUBY_HEAP_MIN_SLOTS
 RUBIES+=(~/.rbenv/versions/*)
 
 # Put .bundle/bin as the first path to lookup executables, to work with bundler binstubs
-# Put /usr/local/bin before /usr/bin to avoid issues with lion installation (mainly git now)
-PATH=./bin:./.bundle/bin:/usr/local/bin:$PATH
+# Put $HOMEBREW_PREFIX/bin before /usr/bin to avoid issues with lion installation (mainly git now)
+PATH=./bin:./.bundle/bin:$HOMEBREW_PREFIX/bin:$PATH
 
 # Setup search path for `cd` command to search in home and projects folders.
 CDPATH=".:~:~/src"

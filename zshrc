@@ -79,4 +79,4 @@ bindkey '^[[A' up-line-or-search # up arrow bindkey
 bindkey '^[[B' down-line-or-search # down arrow
 
 # Setup search path for `cd` command to search in home and projects folders.
-cdpath=(. ~ ~/src)
+cdpath=(. ~ ~/dev)

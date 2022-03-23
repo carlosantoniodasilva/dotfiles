@@ -99,7 +99,7 @@ RUBIES+=(~/.rbenv/versions/*)
 PATH=./bin:./.bundle/bin:$HOMEBREW_PREFIX/bin:$PATH
 
 # Setup search path for `cd` command to search in home and projects folders.
-CDPATH=".:~:~/src"
+CDPATH=".:~:~/dev"
 
 # Setup the location of the go workspace.
-GOPATH=$HOME/src/go
+GOPATH=$HOME/dev/go

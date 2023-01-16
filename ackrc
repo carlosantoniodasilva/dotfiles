@@ -27,6 +27,7 @@ css=sass,scss
 --ignore-dir=out
 --ignore-dir=node_modules
 --ignore-dir=swagger-ui
+--ignore-dir=public/assets
 
 # ignore some files
 --ignore-file=is:tags

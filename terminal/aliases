@@ -63,6 +63,11 @@ alias glg='git log --decorate --graph -n 10 --date=relative --pretty="%C(yellow)
 alias gsh='git show'
 alias gsm='git submodule'
 
+# heroku aliases
+alias h='heroku'
+alias hc='heroku console'
+alias hl='heroku logs --tail'
+
 # rails aliases
 alias rs='rails server'
 alias rsd='rails server --debugger'

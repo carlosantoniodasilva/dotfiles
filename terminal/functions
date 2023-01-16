@@ -37,5 +37,5 @@ gifify() {
 
 # ruby version for terminal prompt
 function __ruby_prompt {
-  ruby --version | sed -n "s/^ruby \(.*\)p.*/\1/p"
+  ruby --version | sed -n "s/^ruby \([0-9]*\.[0-9]*\.[0-9]*\).*/\1/p"
 }

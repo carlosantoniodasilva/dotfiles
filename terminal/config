@@ -29,7 +29,7 @@ if [ -f $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh ]; then
 fi
 
 # Use homebrew's ssl instead of installing with every new Ruby installation..
-RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@1.1"
+RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3"
 
 # Disable output control for terminal device interface. This allows use of bash
 # history forward search with Ctrl-s shortcut. More info:

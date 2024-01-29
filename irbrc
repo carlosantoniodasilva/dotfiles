@@ -1,6 +1,10 @@
 #!/usr/bin/ruby
 require 'irb/completion'
-require 'irb/ext/save-history'
+begin
+  require 'irb/ext/save-history'
+rescue LoadError
+  # Ruby 3.3 changed this, but it's actually enabled by default
+end
 
 IRB.conf[:AUTO_INDENT]  = true
 IRB.conf[:PROMPT_MODE] = :SIMPLE

@@ -31,6 +31,11 @@ fi
 # Use homebrew's ssl instead of installing with every new Ruby installation..
 RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3"
 
+# Build stuff with openssl... (mysql2, I'm looking at you!)
+# LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@3/lib"
+# CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@3/include"
+# PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@3/lib/pkgconfig"
+
 # Disable output control for terminal device interface. This allows use of bash
 # history forward search with Ctrl-s shortcut. More info:
 # http://askubuntu.com/questions/60071/how-to-forward-search-history-with-the-reverse-i-search-command-ctrlr

@@ -2,7 +2,6 @@
 BUNDLE_BIN: ".bundle/bin"
 BUNDLE_GITHUB__HTTPS: "true"
 BUNDLE_JOBS: "4"
-BUNDLE_BUILD__MYSQL2: "--with-opt-dir=/opt/homebrew/opt/openssl@1.1"
+BUNDLE_BUILD__MYSQL2: "--with-opt-dir=/opt/homebrew/opt/openssl@3"
 BUNDLE_BUILD__LIBXML___RUBY: "--with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2/"
 BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2/"
-BUNDLE_BUILD__PG: "--with-pg-config=/opt/homebrew/opt/postgres/bin/pg_config"

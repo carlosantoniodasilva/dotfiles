@@ -20,13 +20,13 @@ if [ -f $HOMEBREW_PREFIX/etc/bash_completion.d/git-prompt.sh ]; then
 fi
 
 # Configure chruby, set it to automatically load the current .ruby-version file.
-# source $HOMEBREW_PREFIX/share/chruby/chruby.sh
-# source $HOMEBREW_PREFIX/share/chruby/auto.sh
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
 
 # Configure asdf
-if [ -f $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh ]; then
-  . $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
-fi
+# if [ -f $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh ]; then
+#   . $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
+# fi
 
 # Use homebrew's ssl instead of installing with every new Ruby installation..
 RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3"

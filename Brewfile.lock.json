@@ -710,6 +710,12 @@
         "options": {
           "full_name": "spotify"
         }
+      },
+      "basecamp": {
+        "version": "3,2.3.14",
+        "options": {
+          "full_name": "basecamp"
+        }
       }
     },
     "mas": {

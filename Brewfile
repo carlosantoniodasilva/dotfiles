@@ -1,6 +1,8 @@
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "puma/puma"
+
 brew "ack"
 brew "bash-completion"
 brew "openssl"
@@ -17,6 +19,8 @@ brew "chruby"
 brew "ruby-install"
 brew "vim"
 brew "heroku/brew/heroku"
+brew "puma/puma/puma-dev"
+
 # cask "1password"
 # cask "amazon-music"
 # cask "android-studio"

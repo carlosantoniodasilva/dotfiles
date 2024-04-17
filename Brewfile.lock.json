@@ -15,6 +15,9 @@
       },
       "homebrew/services": {
         "revision": "a6fcf4f1ce20c6e01a0ff051074e7e9d30a887e1"
+      },
+      "puma/puma": {
+        "revision": "5960519de5e559a6326626643c0a7e4b2fd9832d"
       }
     },
     "brew": {
@@ -630,6 +633,10 @@
             }
           }
         }
+      },
+      "puma/puma/puma-dev": {
+        "version": "0.18.3",
+        "bottle": false
       }
     },
     "cask": {

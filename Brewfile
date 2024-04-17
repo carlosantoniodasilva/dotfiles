@@ -33,4 +33,4 @@ cask "spotify"
 cask "tableplus"
 # cask "visual-studio-code"
 # mas "Xcode", id: 497799835
-
+cask "orbstack"

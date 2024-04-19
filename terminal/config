@@ -31,6 +31,10 @@ source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
 # Use homebrew's ssl instead of installing with every new Ruby installation..
 RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3"
 
+# Fix issues with macOS + Ruby and fork (puma, etc.)
+# https://blog.phusion.nl/2017/10/13/why-ruby-app-servers-break-on-macos-high-sierra-and-what-can-be-done-about-it/
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 # Build stuff with openssl... (mysql2, I'm looking at you!)
 # LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@3/lib"
 # CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@3/include"

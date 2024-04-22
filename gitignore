@@ -6,6 +6,7 @@
 .bundle
 .idea
 .livereload
+.pumaenv
 .rvmrc
 .rbenv-version
 .ruby-version

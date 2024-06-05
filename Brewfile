@@ -4,6 +4,7 @@ tap "homebrew/services"
 tap "puma/puma"
 
 brew "ack"
+brew "angle-grinder"
 brew "bash-completion"
 brew "openssl"
 # brew "asdf"
